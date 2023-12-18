@@ -1,0 +1,181 @@
+5' Codon,Affected Codon,3' Codon,Stop Codon,Site,Gene or Disease
+CTG(leu),TTG(leu),AGT(leu),TAG,L261X,Acid Spingomyelinase
+AGG(arg),CAA(gln),AGT(ser),TAA,Q1041X,Adenomatous polyposis coli(APC)
+AGA(arg),CAA(gln),TCA(ser),TAA,Q1067X,APC-gastric cancer
+CTG(leu),CAG(gln),GGT(gly),TAG,Q1338X,APC
+GCA(ala),GAA(glu),ATA(ile),TAA,E1306X,APC
+AAA(lys),CAA(gln),ATT(ile),TAA,Q12X,AMP deaminase
+AAG(lys),TGG(trp),GCC(ala),TGA,W717X,Androgen receptor
+GCT(ala),GAA(glu),CTG(leu),TAA,E358X,Anti-mullerian Hormone
+AAG(lys),TTA(leu),GTA(val),TAA,L140X,AntithrombinIII
+GGC(gly),CGA(arg),ATC(ile),TGA,R197X,AntithrombinIII
+TGC(cys),CGA(arg),CTC(leu),TGA,R129X,AntithrombinIII
+GTG(val),AAG(lys),GTG(val),TAG,K217X,a1-antitrypsin(emphysema)
+AGG(arg),CAG(gln),GAG(glu),TAG,Q84X,Apolipoprotein AI
+TTC(phe),CGA(arg),GAG(glu),TGA,R2486X,Apolipoprotein B
+AAA(lys),CAG(gln),CAT(his),TAG,Q1450X,Apolipoprotein B
+ACT(thr),TCA(ser),TCA(ser),TAA,S3750X,Apolipoprotein B
+ACA(thr),CGA(arg),CTC(leu),TGA,R19X,Apolipoprotein CII
+CTG(leu),TAC(tyr),GAG(glu),TAG,Y37X,Apolipoprotein CII
+CTG(leu),TAC(tyr),GAG(glu),TAA,Y37X,Apolipoprotein CII
+GCC(ala),TGG(trp),GGC(gly),TAG,W210X,Apolipoprotein E
+CTT(leu),GGA(gly),GAA(glu),TGA,G542X,Cystic fibrosis
+CAA(gln),CGA(arg),GCA(ala),TGA,R553X,Cystic fibrosis
+CAG(gln),TGG(trp),AGG(arg),TGA,W1282X,Cystic fibrosis
+ATA(ile),TGG(trp),AAA(lvs),TAG,W1316X,Cystic fibrosis
+TCT(ser),CAG(gln),TTT(phe),TAG,Q493X,Cystic fibrosis
+AGC(ser),CGA(arg),GTC(val),TGA,R1162X,Cystic fibrosis
+ACA(thr),TGG(trp),AAC(asn),TAG,W846X,Cystic fibrosis
+ATG(met),CGA(arg),TCT(ser),TGA,R1158X,Cystic fibrosis
+GCA(ala),TGC(cys),CAA(gln),TGA,C524X,Cystic fibrosis
+GAG(glu),CGA(arg),GAA(glu),TGA,nt25110,Dystrophin-DMD
+AAG(lys),GAA(glu),CTT(leu),TAA,nt3714,Dystrophin-DMD
+GTC(ala),GAG(glu),AA,TAG,nt2522,Dystrophin-DMD
+CCA(pro),TGG(trp),ACA(thr),TAG,nt6002,Erythropoietin receptor(EPOR)
+TGG(leu),CGA(arg),TTC(phe),TGA,R-5X,Factor VIII(HaemA)
+TAT(tyr),TGG(trp),CAT(his),TGA,W225X,Factor VIII(HaemA)
+CTA(leu),CGA(arg),ATG(met),TGA,R336X,Factor VIII(HaemA)
+GTC(val),CGA(arg),TTT(phe),TGA,R427X,Factor VIII(HaemA)
+AAC(asn),CGA(arg),AGC(ser),TGA,R583X,Factor VIII(HaemA)
+TTG(leu),CGA(arg),CAG(gln),TGA,R795X,Factor VIII(HaemA)
+AAT(asn),CAG(gln),AGC(ser),TAG,Q1686X,Factor VIII(HaemA)
+ACA(thr),CGA(arg),CAC(his),TGA,R1696X,Factor VIII(HaemA)
+ATT(ile),CGA(arg),TGG(trp),TGA,R1941X,Factor VIII(HaemA)
+GTA(val),CGA(arg),AAA(lys),TGA,R1966X,Factor VIII(HaemA)
+TAT(tyr),CGA(arg),GGA(gly),TGA,R2116X,Factor VIII(HaemA)
+GCT(ala),CGA(arg),TAC(tyr),TGA,R2147X,Factor VIII(HaemA)
+GCT(ala),CGA(arg),CTT(leu),TGA,R-2209X,Factor VIII(HaemA)
+CTT(leu),CGA(arg),ATT(ile),TGA,R2307X,Factor VIII(HaemA)
+GTT(val),CAA(gln),GGG(gly),TAA,nt6406,Factor IX(HaemB)
+GCA(ala),CGA(arg),GAA(glu),TGA,nt6460,Factor IX(HaemB)
+TTT(phe),GAA(glu),AAC(asn),TAA,nt64712,Factor IX(HaemB)
+TTT(phe),TGG(trp),AAG(lys),TAG,nt6688,Factor IX(HaemB)
+AAG(lys),CAG(gln),TAT(tyr),TAG,nt6693,Factor IX(HaemB)
+GAT(asp),CAG(gln),TGT(cvs),TAG,ntl10400,Factor IX(HaemB)
+TGT(cys),GAG(glu),TCC(ser),TAG,nt 10406,Factor IX(HaemB)
+TGT(cys),TGG(trp),TGT(cys),TGA,nt 10468,Factor IX(HaemB)
+TGG(trp),TGT(cys),CCC(pro),TGA,nt 10471,Factor IX(HaemB)
+AGA(arg),TGC(cys),GAG(glu),TGA,nt 17700,Factor IX(HaemB)
+TAT(tyr),CGA(arg),CTT(leu),TGA,ntl17’761,Factor IX(HaemB)
+CCT(pro),TGG(trp),CAG(gln),TAG,nt20561,Factor IX(HaemB)
+TGT(cys),GGA(gly),GGC(gly),TGA,nt30072,Factor IX(HaemB)
+AAT(asn),GAA(glu),AAA(lys),TAA,nt30090,Factor IX(HaemB)
+AAA(lys),TGG(trp),ATT(ile),TAG,nt30097,Factor IX(HaemB)
+AAG(lys),CGA(arg),AAT(asn),TGA,nt30863,Factor IX(HaemB)
+ATT(ile),CGA(arg),ATT(ile),TGA,nt30875,Factor IX(HaemB)
+AAG(lys),GAA(glu),TCA(tyr),TAA,nt31001,Factor IX(HaemB)
+GGC(gly),TAT(tyr),GTA(val),TAA,nt31039,Factor IX(HaemB)
+GGC(gly),TGG(trp),GGA(gly),TGA,nt31051,Factor IX(HaemB)
+CTT(leu),CAG(gln),TAC(tyr),TAG,nt31091,Factor IX(HaemB)
+CAG(gln),TAC(tyr),CTT(leu),TAG,nt31096,Factor IX(HaemB)
+GAC(asp),CGA(arg),GCC(ala),TGA,nt31118,Factor IX(HaemB)
+ACA(thr),TGT(cys),CTT(leu),TGA,nt31129,Factor IX(HaemB)
+CTT(leu),CGA(arg),TCT(ser),TGA,nt31133,Factor IX(HaemB)
+GAT(asp),TCA(ser),TGT(cys),TGA,nt31200,Factor IX(HaemB)
+GAA(gln),GGA(gly),GAT(asp),TGA,nt31208,Factor IX(HaemB)
+TTC(phe),TTA(leu),ACT(thr),TGA,nt31257,Factor IX(HaemB)
+AGC(ser),TGG(trp),GGT(gly),TGA,nt31276,Factor IX(HaemB)
+GAA(glu),GAG(glu),TGT(cys),TAG,nt31283,Factor IX(HaemB)
+AAC(asn),TGG(trp),ATT(ile),TGA,nt31342,Factor IX(HaemB)
+GAA(glu),AAA(lys),ACA(thr),TAA,nt31352,Factor IX(HaemB)
+CCT(pro),TGG(trp),CAG(gln),TGA,nt20562,Factor IX(HaemB)
+TGG(trp),CAG(gln),GTA(val),TAG,nt20563,Factor IX(HaemB)
+TGT(cys),GGA(gly),GGC(gly),TGA,nt30072,Factor IX(HaemB)
+AAT(asn),GAA(glu),AAA(lys),TAA,nt30090,Factor IX(HaemB)
+AAA(lys),TGG(trp),ATT(ile),TAG,nt30097,Factor IX(HaemB)
+AAG(lys),CGA(arg),AAT(asn),TGA,nt30863,Factor IX(HaemB)
+ATT(ile),CGA(arg),ATT(ile),TGA,nt30875,Factor IX(HaemB)
+AAG(lys),GAA(glu),TCA(tyr),TAA,nt31001,Factor IX(HaemB)
+GGC(gly),TAT(tyr),GTA(val),TAA,nt31039,Factor IX(HaemB)
+GGC(gly),TGG(trp),GGA(gly),TGA,nt31051,Factor IX(HaemB)
+CTT(leu),CAG(gln),TAC(tyr),TAG,nt31091,Factor IX(HaemB)
+CAG(gln),TAC(tyr),CTT(leu),TAG,nt31096,Factor IX(HaemB)
+GAC(asp),CGA(arg),GCC(ala),TGA,nt31118,Factor IX(HaemB)
+ACA(thr),TGT(cys),CTT(leu),TGA,nt31129,Factor IX(HaemB)
+CTT(leu),CGA(arg),TCT(ser),TGA,nt31133,Factor IX(HaemB)
+GAT(asp),TCA(ser),TGT(cys),TGA,nt31200,Factor IX(HaemB)
+GAA(gln),GGA(gly),GAT(asp),TGA,nt31208,Factor IX(HaemB)
+TTC(phe),TTA(leu),ACT(thr),TGA,nt31257,Factor IX(HaemB)
+AGC(ser),TGG(trp),GGT(gly),TGA,nt31276,Factor IX(HaemB)
+GAA(glu),GAG(glu),TGT(cys),TAG,nt31283,Factor IX(HaemB)
+AAC(asn),TGG(trp),ATT(ile),TGA,nt31342,Factor IX(HaemB)
+GAA(glu),AAA(lys),ACA(thr),TAA,nt31352,Factor IX(HaemB)
+TCA(ser),CGA(arg),CTT(val),TGA,R185X,Fanconi anemia-group C gene
+AGT(ser),TGG(trp),GAT(asp),TGA,nt5574,Fibrillin gene(Marfan syndrome)
+GCC(ala),TGC(cys),ACC(thr),TGA,C720X,Fructose Intolerance-Aldolase B
+TGG(trp),GAA(glu),AAG(lys),TAA,E375X,a-L-Fucosidase(fucosidosis)
+CCA(pro),GAA(glu),AAC(asn),TAA,E357X,Fumarylacetoacetate hydrolase
+TTG(leu),GAA(glu),CTG(leu),TAA,E364X,Fumarylacetoacetate hydrolase
+GAT(asp),CGA(arg),GGG(gly),TGA,R359X,Glucocerebrosidase(Gaucher dis.)
+CTG(leu),CGA(arg),GAC(asp),TGA,R186X,Glucokinase-NID diabetes
+GAC(asp),GAG(glu),AGC(ser),TAG,E279X,Glucokinase
+AGA(arg),TGG(trp),ACC(thr),TGA,W343X,Glycoprotein lb alpha
+CTC(leu),CGA(arg),GGT(gly),TGA,R137X,B-hexosaminidase A-Tay Sachs
+TGG(trp),CGA(arg),GAG(glu),TGA,R393X,B-hexosaminidase A-Tay Sachs
+CCC(pro),TGG(trp),CCT(pro),TGA,W26X,B-hexosaminidase A-Tay Sachs
+GGG(gly),TGG(trp),AAT(asn),TAG,W171X,typeII 3B hydroxysteroid dehydrog
+ATC(ile),GAA(glu),AGG(arg),TAA,exon2,Hypothyroidism TSH B subunit gene
+CAG(gln),TAC(tyr),GTC(val),TAG,Y64X,IDUA (Hurler syndrome)
+CCA(pro),CAG(gln),CCG(pro),TAG,Q3 lOX,IDUA alpha-L-iduronidase
+GTG(val),CGA(arg),ATC(ile),TGA,R897X,Insulin receptor(leprechaunism)
+ATT(ile),CGA(arg),GGA(gly),TGA,R372X,Insulin receptor(leprechaunism)
+CTT(leu),CGA(arg),G,TGA,R988X,Insulin receptor(diabetes)
+AAC(asn),CAG(gln),AGT(ser),TAG,Q672X,Insulin receptor Leprechaunism
+CTT(leu),CGA(arg),GAG(glu),TGA,R1000X,Insulin receptor
+GTG(val),TAC(tyr),CTT(leu),TAG,Y167X,LDL receptor(Hypercholesterolemia)
+TTC(phe),CAG(gln),TGC(cys),TAG,Q12X,LDL receptor
+CTG(leu),TGC(cys),CTC(leu),TGA,C660X,LDL receptor(hypercholerterolemia)
+GTC(val),TAC(tyr),AAC(asn),TAA,Y83X,Lecithin cholesterol acyltransferase
+GGA(gly),CAG(gln),GAT(asp),TGA,Q106X,Lipoprotein lipase
+ATG(met),TAT(tyr),GAG(glu),TAA,Y61X,Lipoprotein lipase
+AAA(lys),TGG(trp),AAG(lys),TGA,W382X,Lipoprotein lipase
+AGT(ser),TGG(trp),GTG(val),TAG,W64X,Lipoprotein lipase
+AAG(lys),TCA(ser),GGC(gly),TGA,S447X,Lipoprotein lipase
+CTT(leu),CGA(arg),GAA(glu),TGA,nt2746,OCRL-1 oculocerebrorenal synd. Lowe
+CCC(pro),TAT(try),AAT(asn),TAA,Y209X,Omithine aminotransferase
+TTA(leu),TAC(tyr),CCT(pro),TAG,Y299X,Ornithine aminotransferase
+CTT(leu),CGA(arg),GAG(glu),TGA,R426X,Omithine aminotransferase
+GCT(ala),CGA(arg),GTG(val),TGA,R141X,Ornithine transcarbamylase
+GCT(ala),CGA(arg),GTG(val),TGA,R109X,Omithine transcarbamylase
+CCT(pro),CAG(gln),CAT(his),TAG,Q192X,p53 squamous cell carcinoma
+GCC(ala),AAG(lys),TCT(ser),TAG,K12OX,p53 Li Fraumeni syndrome
+TTT(phe),TGC(cys),CAA(gln),TGA,C135X,p53 Hepatocellular carcinoma
+TTT(phe),CGA(arg),CAT(his),TGA,R213X,"p53 Ovarian carcinoma, gastric tumour"
+CCC(pro),CAG(gln),CCA(pro),TAG,Q317X,p53 Esophageal carcinoma
+TAT(tyr),GAG(glu),CCG(pro),TAG,E221X,p53 Osteocarcinoma
+CTG(leu),GGA(gly),CGA(arg),TGA,Y226X,p53 Ovarian carcinoma
+TGC(cys),CAA(gln),CTG(leu),TAA,Q136X,p53 Esophageal carcinoma
+GAG(glu),TAT(tyr),TTG(leu),TAG,Y205X,p53 Ovarian carcinoma
+TTC(phe),CGA(arg),GTC(val),TGA,R261X,Phenylalanine hydroxylase(PKU
+TTA(leu),TCA(scr),GAG(glu),TGA,S359X,Phenylalanine hydroxylase(PKU)
+TCA(ser),CGA(arg),GAT(asp),TGA,R111X,Phenylalanine hydroxylase(PKU)
+CAT(his),GGA(glv),TCC(ser),TGA,Y272X,Phenylalanine hydroxylase(PKU)
+TAC(tyr),TGG(trp),TTT(phe),TAG,W326X,Phenylalanine hydroxylase(PKU)
+CAG(gln),TAC(tyr),TGC(cvs),TAA,Y356X,Phenylalanine hydroxylase(PKU)
+CTC(leu),CGA(arg),CCT(pro),TGA,R243X,Pheniallanine hydroxylase (PKU)
+CTT(leu),CGA(arg),GAT(asp),TGA,R584X,Platelet glycoproteinlib
+GGC(gly),TGG(trp),CAC(his),TAG,W198X,Porphobilinogen deaminase
+?AC(),TAT(tyr),GAG(glu),TAA,Y145X,Prion protein
+ACC(thr),TGG(trp),GGA(gl),TAG,WN29X,Protein C (PROC)
+GCT(ala),CGA(arg),GGA(gly),TGA,R732X,Procollagen Il(COL2A1)
+AAG(lys),GAG(glu),GTC(val),TAG,E249X,Rhodopsin
+AAG(lys),CAG(gln),CTG(leu),TAG,nt687,SRY sex reversal
+TTC(phe),TGG(trp),CCT(pro),TAG,W406X,Steroid 21 hydroxylase
+CTG(leu),CAG(gln),GAG(glu),TAG,Q318X,Steroid 21 hydroxylase
+CTC(leu),CGA(arg),GGA(gly),TGA,R189X,Triosephosphate isomerase-anemia
+GGG(gly),TCA(ser),GTG(val),TGA,S2213X,Tyrosine amino transferase
+ATC(ile),CGA(arg),GTG(val),TGA,R417X,Tyrosine amino transferase
+ATC(ile),CGA(arg),GCC(ala),TGA,R52X,Tyrosine amino transferase
+GTC(val),TGG(trp),ATG(met),TAG,W178X,Tyrosinase (oculocutaneolns albinism)
+?AC(),TGG(trp),GCA(ala),TGA,W71X,V2-receptor(X-linked NDI)
+CTG(leu),CAG(gln),ATG(met),TAG,Q119X,V2-Vasoprcssin receptor(diabetes)
+AAG(lys),TAC(tyr),CGC(arg),TAA,nt970,Vitamin D receptor(rickets)
+TGC(cys),CAG(gln),TTC(phe),TAG,Q149X,Vitamin D receptor(rickets)
+GTC(val),CGA(arg),GTG(val),TGA,R2535X,Von Willebrand Factor
+CCC(pro),CGA(arg),GAG(glu),TGA,R1659X,Von Willebrand typelll
+GAA(glu),CGA(arg),AGG(arg),TGA,nt 1084,WTI-turnour suppressor-Wilms tumour
+CAG(gln),CGA(arg),AAG(lys),TGA,,WTI-tumour supressor Zn finger3
+TCT(ser),TAT(tyr),CTT(leu),TAA,Y116X,XP-A-Xeroderma pigmentosa
+GTC(val),CGA(arg),CAG(gln),TGA,R207X,XP-A-Xeroderma pigmentosa
+CGG(arg),CGA(arg),GCA(ala),TGA,R228X,XP-A-Xeroderma pigmentosa
+AAC(asn),CGA(arg),GAA(glu),TGA,R211X,XP-A-Xeroderma pigmentosa
