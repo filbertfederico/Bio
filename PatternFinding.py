@@ -93,7 +93,6 @@ def select_gene_sequence(input_gene):
     else:
         print("Invalid option")
 
-# Assuming you call the function somewhere in your code
 select_gene_sequence(input_gene)
 
 def find_patterns_all(gene_sequence, patterns):
@@ -114,6 +113,7 @@ def find_patterns_all(gene_sequence, patterns):
             'expected_percentage' : expected_percentage
         }
     return results_all
+
 expected_results = {
     'TTT': {'matches': 192, 'percentage': 3.476371537208039},
     'TTC': {'matches': 308, 'percentage': 5.576679340937896},
@@ -200,7 +200,6 @@ def find_patterns_with_comparison(gene_sequence, patterns):
             results[pattern] = {
                 'matches': matches,
                 'percentage': percentage,
-                'expected_percentage': expected_percentage
             }
 
     return results
@@ -223,11 +222,14 @@ patterns = ['TTT', 'TTC', 'TTA', 'TTG',
             'GAT', 'GAC', 'GAA', 'GAG',
             'GGT', 'GGC', 'GGA', 'GGG']  # These are the patterns we're looking for
 
-# Print comparison at the beginning
+# Print comparison
 results_comparison = find_patterns_with_comparison(gene_sequence, patterns)
 for pattern, result in results_comparison.items():
-    print(f"Pattern: {pattern}, Found {len(result['matches'])} match(es), Percentage: {result['percentage']}%, Expected Percentage: {result['expected_percentage']}")
+    if 'expected_percentage' in result:
+        print(f"Pattern: {pattern}, Found {len(result['matches'])} matches, Percentage: {result['percentage']}%, Expected Percentage: {result['expected_percentage']}")
+    else:
+        print(f"Pattern: {pattern}, Found {len(result['matches'])} matches, Percentage: {result['percentage']}%, Expected Percentage: Not available")
 print("--------------------------------------------------------------------")
 results_all = find_patterns_all(gene_sequence, patterns)
 for pattern, result in results_all.items():
-    print(f"Pattern: {pattern}, Found {len(result['matches'])} match(es), Percentage: {result['percentage']}%, Expected Percentage: {result['expected_percentage']}")
+    print(f"Pattern: {pattern}, Found {len(result['matches'])} matches, Percentage: {result['percentage']}%")
