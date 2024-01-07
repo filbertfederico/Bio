@@ -95,6 +95,7 @@ def select_gene_sequence(input_gene):
 
 select_gene_sequence(input_gene)
 
+#regex pattern matching algorithm
 def find_patterns_all(gene_sequence, patterns):
     with open(gene_sequence, 'r') as file:
         gene_sequence = file.read().replace('\n', '')
@@ -204,6 +205,121 @@ def find_patterns_with_comparison(gene_sequence, patterns):
 
     return results
 
+#KMP Knuth-Morris-Prat
+def KMPSearch(pat, txt):
+    M = len(pat)
+    N = len(txt)
+
+    # create lps[] that will hold the longest prefix suffix values for pattern
+    lps = [0] * M
+    j = 0  # index for pat[]
+
+    # Preprocess the pattern (calculate lps[] array)
+    computeLPSArray(pat, M, lps)
+
+    i = 0  # index for txt[]
+    while i < N:
+        if pat[j] == txt[i]:
+            i += 1
+            j += 1
+
+        if j == M:
+            return i - j
+
+        # mismatch after j matches
+        elif i < N and pat[j] != txt[i]:
+            # Do not match lps[0..lps[j-1]] characters,
+            # they will match anyway
+            if j != 0:
+                j = lps[j - 1]
+            else:
+                i += 1
+    return -1
+
+def computeLPSArray(pat, M, lps):
+    len = 0  # length of the previous longest prefix suffix
+
+    lps[0] = 0  # lps[0] is always 0
+    i = 1
+
+    # the loop calculates lps[i] for i = 1 to M-1
+    while i < M:
+        if pat[i] == pat[len]:
+            len += 1
+            lps[i] = len
+            i += 1
+        else:
+            if len != 0:
+                len = lps[len - 1]
+            else:
+                lps[i] = 0
+                i += 1# Find patterns using KMP algorithm
+def find_patterns_with_KMP(gene_sequence, patterns):
+    with open(gene_sequence, 'r') as file:
+        gene_sequence = file.read()
+
+    results = {}
+    for pattern in patterns:
+        matches = []
+        pos = KMPSearch(pattern, gene_sequence)
+        while pos != -1:
+            matches.append(pos)
+            pos = KMPSearch(pattern, gene_sequence[pos + 1:])
+            if pos != -1:
+                pos += matches[-1] + 1
+
+        results[pattern] = {
+            'matches': matches,
+            'count': len(matches),
+        }
+
+    return results
+
+# Boyer-Moore algorithm for pattern searching
+def searchBoyerMoore(txt, pat):
+    M = len(pat)
+    N = len(txt)
+
+    # Initialize bad character skip array
+    bad_char = [-1] * 256
+
+    # Fill the bad character skip array
+    for i in range(M):
+        bad_char[ord(pat[i])] = i
+
+    # Searching the pattern using bad character skip
+    s = 0
+    matches = []
+    while s <= N - M:
+        j = M - 1
+
+        # Checking from right to left
+        while j >= 0 and pat[j] == txt[s + j]:
+            j -= 1
+
+        if j < 0:
+            matches.append(s)
+            s += (M - bad_char[ord(txt[s + M])] if s + M < N else 1)
+        else:
+            s += max(1, j - bad_char[ord(txt[s + j])])
+
+    return matches
+
+# Function to find patterns using Boyer-Moore algorithm
+def find_patterns_with_BoyerMoore(gene_sequence, patterns):
+    with open(gene_sequence, 'r') as file:
+        gene_sequence = file.read()
+
+    results = {}
+    for pattern in patterns:
+        matches = searchBoyerMoore(gene_sequence, pattern)
+        results[pattern] = {
+            'matches': matches,
+            'count': len(matches),
+        }
+
+    return results
+
 # pattern usage:
 patterns = ['TTT', 'TTC', 'TTA', 'TTG',
             'TCT', 'TCC', 'TCA', 'TCG',
@@ -220,7 +336,8 @@ patterns = ['TTT', 'TTC', 'TTA', 'TTG',
             'GTT', 'GTC', 'GTA', 'GTG',
             'GCT', 'GCC', 'GCA', 'GCG',
             'GAT', 'GAC', 'GAA', 'GAG',
-            'GGT', 'GGC', 'GGA', 'GGG']  # These are the patterns we're looking for
+            'GGT', 'GGC', 'GGA', 'GGG']
+
 
 # Print comparison
 results_comparison = find_patterns_with_comparison(gene_sequence, patterns)
@@ -230,6 +347,17 @@ for pattern, result in results_comparison.items():
     else:
         print(f"Pattern: {pattern}, Found {len(result['matches'])} matches, Percentage: {result['percentage']}%, Expected Percentage: Not available")
 print("--------------------------------------------------------------------")
+print("regex algo:")
 results_all = find_patterns_all(gene_sequence, patterns)
 for pattern, result in results_all.items():
     print(f"Pattern: {pattern}, Found {len(result['matches'])} matches, Percentage: {result['percentage']}%")
+print("-----------------------------------------------------")
+print("KMP algo:")
+results_KMP = find_patterns_with_KMP(gene_sequence, patterns)
+for pattern, result in results_KMP.items():
+    print(f"Pattern: {pattern}, Found {result['count']}")
+print("-----------------------------------------------------")
+print("BoyerMoore algo")
+results_BoyerMoore = find_patterns_with_BoyerMoore(gene_sequence, patterns)
+for pattern, result in results_BoyerMoore.items():
+    print(f"Pattern: {pattern}, Found {result['count']}")
