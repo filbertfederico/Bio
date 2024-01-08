@@ -2,6 +2,9 @@ import re
 import tkinter
 import os
 import random
+import time
+
+start_time = time.time()
 
 print("Human Codon Mutation")
 print("1: Pick preselected human genome")
@@ -361,3 +364,44 @@ print("BoyerMoore algo")
 results_BoyerMoore = find_patterns_with_BoyerMoore(gene_sequence, patterns)
 for pattern, result in results_BoyerMoore.items():
     print(f"Pattern: {pattern}, Found {result['count']}")
+
+print("-----------------------------------------------------")
+
+# # Perform comparison
+# comparison_results = compare_results(results_all, results_KMP, results_BoyerMoore)
+
+# # Display comparison results
+# for pattern, result in comparison_results.items():
+#     print(f"Pattern: {pattern}, Comparison: {result}")
+
+def calculate_accuracy_per_pattern(expected, algorithm_results):
+    accuracy_per_pattern = {}
+    for pattern, result in algorithm_results.items():
+        expected_matches = expected.get(pattern, {}).get('matches', 0)
+        algorithm_matches = len(result['matches']) if 'matches' in result else 0
+
+        if expected_matches > 0:
+            accuracy = (algorithm_matches / expected_matches) * 100
+        else:
+            accuracy = 0
+        
+        accuracy_per_pattern[pattern] = accuracy
+    
+    return accuracy_per_pattern
+
+# Calculate accuracy per pattern for each algorithm
+accuracy_regex_per_pattern = calculate_accuracy_per_pattern(expected_results, results_all)
+accuracy_KMP_per_pattern = calculate_accuracy_per_pattern(expected_results, results_KMP)
+accuracy_BoyerMoore_per_pattern = calculate_accuracy_per_pattern(expected_results, results_BoyerMoore)
+
+# Display comparison per pattern
+for pattern, accuracy in accuracy_regex_per_pattern.items():
+    print(f"Pattern: {pattern}, Regex Accuracy: {accuracy:.2f}% | KMP Accuracy: {accuracy_KMP_per_pattern[pattern]:.2f}% | Boyer-Moore Accuracy: {accuracy_BoyerMoore_per_pattern[pattern]:.2f}%")
+
+# Record the end time
+end_time = time.time()
+
+# Calculate the total time taken
+execution_time = end_time - start_time
+
+print(f"Total execution time: {execution_time} seconds")
